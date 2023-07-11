@@ -9,3 +9,35 @@ body {
     font-family: 'Montserrat', sans-serif;
 
 }
+:root {
+    --size:1rem;
+}
+.navbar{
+    display: flex;
+    font-family:  'Montserrat', sans-serif; ;
+    justify-content: space-between;
+    padding: var(--size);
+    gap: var(--size);
+}
+
+.navbar a {
+    color: #212429;
+    text-decoration: none;
+    padding: .5rem var(--size);
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size);
+    padding: var(--size);
+    
+}
+
+.content div {
+    background-color: #f1f1f1;
+    padding: var(--size);
+    text-align: center;
+   
+}
