@@ -12,34 +12,36 @@ body {
 :root {
     --size: 1rem;
 }
-.fixed {
+.stiky {
+    position: sticky;
+    top: 0;
+    left: 0;
     display: flex;
     font-family:  'Montserrat', sans-serif;
     background-color: #f1f1f1;
     justify-content: space-between;
-    padding: var(--size);
     gap: var(--size);
+    align-items: center;
 }
 
-.fixed a {
+.stiky a {
+    display: flex;
     color: #212429;
     text-decoration: none;
     padding: .5rem var(--size);
-
+    font-size: xx-small;
 }
 
 .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--size);
-    padding: var(--size);
-    
+    padding: var(--size); 
 }
 
 .content div {
     padding: var(--size);
     text-align: center;
-   
 }
 
 .navbar {
@@ -49,11 +51,5 @@ body {
     justify-content: space-between;
     padding: var(--size);
     gap: var(--size);
-
-}
-
-.navbar a {
-    color: #f1f1f1;
-    text-decoration: none;
-    padding: .5rem var(--size);
+    align-items: center;
 }
