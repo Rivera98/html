@@ -36,14 +36,19 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--size);
-    padding: var(--size); 
-}
-
-.content div {
     padding: var(--size);
+}
+.content div {
+    padding: 8px;
+    margin: 25px;
+    background-color: #white;
+    border-radius: 50%;
+    text-align: right;
+
+}
+.content span {
     text-align: center;
 }
-
 .navbar {
     display: flex;
     font-family:  'Montserrat', sans-serif;
@@ -52,4 +57,11 @@ body {
     padding: var(--size);
     gap: var(--size);
     align-items: center;
+}
+
+.navbar a {
+    background-color: white;
+    border-radius: 100%;
+    padding: 8px;
+    margin-right: 16px;
 }
